@@ -1,0 +1,9 @@
+{
+  "id": "users_full_name",
+  "table": "users",
+  "key": "id",
+  "kind": "rename_column",
+  "from": "name",
+  "to": "full_name",
+  "type": "text"
+}

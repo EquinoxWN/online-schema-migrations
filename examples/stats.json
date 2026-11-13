@@ -1,0 +1,8 @@
+{
+  "tables": {
+    "users": {
+      "rows": 500000000,
+      "columns": {"email": "varchar(100)", "age": "integer"}
+    }
+  }
+}

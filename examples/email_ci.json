@@ -1,0 +1,14 @@
+{
+  "id": "users_email_ci",
+  "table": "users",
+  "key": "id",
+  "kind": "change_type",
+  "from": "email",
+  "to": "email_ci",
+  "type": "text",
+  "up": "lower(email)",
+  "down": "email_ci",
+  "not_null": true,
+  "batch_size": 1000,
+  "lock_timeout": "2s"
+}
