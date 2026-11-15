@@ -95,7 +95,7 @@ and contract adds NOT NULL through a validated check before dropping the old col
 
 ## Run it
 
-Needs Go 1.25+ (CI: 1.26.10). For the commands that touch a database: PostgreSQL 14 or newer.
+Needs Go 1.25+ (CI: 1.26.11). For the commands that touch a database: PostgreSQL 14 or newer.
 
 ```bash
 make setup
@@ -152,7 +152,7 @@ Latest local run (full detail in [docs/results/m1.md](docs/results/m1.md)):
 | Expand/contract with concurrent old-code writes | 3,000 rows, 0 out of sync, 0 old values changed |
 | Demo, 100,000 rows | expand 38 ms, backfill 952 ms (100 batches), switch 52 ms, contract 30 ms |
 | Mutation check | 13 of 13 hand mutations killed |
-| govulncheck v1.8.0 | 0 vulnerabilities affecting the code |
+| govulncheck v1.8.0 (Go 1.26.11) | No vulnerabilities found |
 
 Without a server, the 10 PostgreSQL tests skip with a message; `make test-pg` and CI fail on any
 skip. The race detector runs in CI only (no cgo on the development machine), and the CI jobs have

@@ -4,7 +4,7 @@ Thanks for helping. This is a Go project; issues and pull requests are welcome.
 
 ## Set up and check your change
 
-Needs Go 1.25 or newer (CI uses 1.26.10). Caches stay in git-ignored folders inside the repo.
+Needs Go 1.25 or newer (CI uses 1.26.11). Caches stay in git-ignored folders inside the repo.
 
 ```bash
 make setup      # download modules
